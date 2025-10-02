@@ -4,10 +4,10 @@ FAIR Ramp Up-Stabilization Scenario
 Here we will use the simple climate model/emulator FAIR (Finite Amplitude Impulse Response) model, running with a wide range of Equilibrium Climate Sensitivity (ECS) for 3 different ramp up scenarios, in order to gain global temperature time series.
 
 Content:
-
     Generate TCR-ECS Pairs
     Create Scenarios (finding Concentrations)
     Runing Model
+    
 """
 
 # import libraries
@@ -51,7 +51,7 @@ start_ppm = 278 # preindustrial value (we will continously use this)
 test_ppm = 797 # here we insert different values and run the code below, to find the corresponding final Temperature
 slope = (test_ppm - start_ppm) / 200
 
-nt = 2200 # number of time steps (in years) = 200 years ramp up and 2000 years stabilization
+nt = 2000 # number of time steps (in years) = 200 years ramp up and 1800 years stabilization
 years = np.arange(1850, 1850+nt) # to know which time we are referring to, we fill an array with numbers of years
 conc = np.full_like(years, test_ppm, dtype=float)
 conc[0] = 278
@@ -71,7 +71,7 @@ print(T[nt-1])
 """
 run the snippet above and insert some values in 'test_ppm'
 to find the ppms corresponding to the wished temperatures
-we found: ppms = [309, 344, 382, 424, 523, 646, 798]
+I found: ppms = [309, 344, 382, 424, 523, 646, 798]
 """
 
 """
@@ -79,7 +79,7 @@ we found: ppms = [309, 344, 382, 424, 523, 646, 798]
 """
 ppms = [309, 344, 382, 424, 523, 646, 798]
 start_ppm = 278
-nt = 50000 # number of time steps (in years) = 200 years ramp up and 2000 years stabilization
+nt = 50000 # number of time steps (in years) 
 years = np.arange(1850, 1850+nt)
 
 conc_list = []
