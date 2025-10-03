@@ -1,5 +1,3 @@
-**This is still work in progress**
-
 # Master Thesis: Climate Sensitivity as a Determinant of Climate Tipping Risk
 
 This GitHub Repository contains all code I used for my Master Thesis. All code is written in Python. The complete Methodology is sketched out in the workflow below.
