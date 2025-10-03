@@ -44,5 +44,5 @@ Additionally it needs:
 
 risk_array_2-4.npy - this file contains the 
 
-![MA_Workflow](https://github.com/user-attachments/assets/d361ff4d-93a6-4c32-9720-76facb31880f)
+![MA_Workflow](https://github.com/user-attachments/assets/b184dfae-b5ae-4a88-bcff-a3a00b142034)
 
