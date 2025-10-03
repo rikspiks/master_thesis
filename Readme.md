@@ -5,7 +5,7 @@
 This GitHub Repository contains all code I used for my Master Thesis. All code is written in Python. The complete Methodology is sketched out in the workflow below.
 The Thesis answers the question: _How does Climate Sensitivity determine Climate Tipping Risk?_
 
-All data can be found in the (Zenodo Project)[https://zenodo.org/records/17250455?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImFhN2ZmNTE3LTIzNjEtNDMyOC05MjJiLThlNWFmMjViMDBiZiIsImRhdGEiOnt9LCJyYW5kb20iOiI1NTA2NTBhOGZjZmQ2OTRjZmI3NzNhOWZhMzcyZGRiMSJ9.-B8ge1fWzcRT1nuX99uRYetcIlFMf0SFlkDcwXE5_8UYlnM4bLJmOA2eU-9OZjLqITi5hkPcdLPrRaHkwSmEmw].
+All data can be found in the [Zenodo Project](https://zenodo.org/records/17250455?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImFhN2ZmNTE3LTIzNjEtNDMyOC05MjJiLThlNWFmMjViMDBiZiIsImRhdGEiOnt9LCJyYW5kb20iOiI1NTA2NTBhOGZjZmQ2OTRjZmI3NzNhOWZhMzcyZGRiMSJ9.-B8ge1fWzcRT1nuX99uRYetcIlFMf0SFlkDcwXE5_8UYlnM4bLJmOA2eU-9OZjLqITi5hkPcdLPrRaHkwSmEmw).
 
 ## Structure: 
 
