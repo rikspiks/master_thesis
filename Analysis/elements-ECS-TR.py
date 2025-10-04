@@ -28,8 +28,8 @@ networks = ["_0.0_0.0_0.0","_0.0_0.0_1.0","_0.0_0.0_-1.0",
             "_1.0_0.0_0.0","_1.0_0.0_1.0","_1.0_0.0_-1.0",
             "_-1.0_0.0_0.0","_-1.0_0.0_1.0","_-1.0_0.0_-1.0"]
 
-path = "C:/Users/LENOVO/Desktop/FAIR-PyCas"
-risk = np.load('risk_array_2-4.npy')
+
+risk = np.load('C:/Users/LENOVO/Desktop/FAIR-PyCas/risks_data.npy')
 
 scenario_colors = ['gold', 'mediumaquamarine','green', 'tab:orange', 'red', 'mediumvioletred', "indigo"]  
 labels = ['$\geq$ 1', '$\geq$ 2','$\geq$ 3','all 4', 'GIS', 'AMOC', 'WAIS', 'AMAZ']
@@ -48,36 +48,36 @@ def logistic(x, l,x0, k):
 
 for idx,r in enumerate(range(-8, 0)):
     
-    # HISTOGRAM PART
+    # # OPTIONAL HISTOGRAM PART
     
-    # Figure mit zwei Achsen
-    fig, (ax_hist, ax) = plt.subplots(2, 1, sharex=True, figsize=(15, 13),
-                                      gridspec_kw={'height_ratios': [1, 3], 'hspace': 0.05})
+    # # Figure mit zwei Achsen
+    # fig, (ax_hist, ax) = plt.subplots(2, 1, sharex=True, figsize=(15, 13),
+    #                                   gridspec_kw={'height_ratios': [1, 3], 'hspace': 0.05})
 
-    # Histogramm mit echter y-Achse + normierter Alpha
-    for i in range(len(bins) - 1):
-        alpha = (counts[i] / max_count) * 0.8
-        ax_hist.bar(
-            (bins[i] + bins[i + 1]) / 2,
-            counts[i],
-            width=(bins[i + 1] - bins[i]),
-            color='darkorange',
-            alpha=alpha,
-            align='center'
-        )
+    # # Histogramm mit echter y-Achse + normierter Alpha
+    # for i in range(len(bins) - 1):
+    #     alpha = (counts[i] / max_count) * 0.8
+    #     ax_hist.bar(
+    #         (bins[i] + bins[i + 1]) / 2,
+    #         counts[i],
+    #         width=(bins[i + 1] - bins[i]),
+    #         color='darkorange',
+    #         alpha=alpha,
+    #         align='center'
+    #     )
 
-    ax_hist.set_ylabel("")
-    ax_hist.spines['top'].set_color('white')
-    ax_hist.spines['left'].set_color('white')
-    ax_hist.spines['right'].set_color('white')
-    ax_hist.spines['bottom'].set_color('black')
-    ax_hist.yaxis.set_ticks([])
-    ax_hist.axvline(x = np.median(tcrecs[:,1]), color = "black", label = "Median ECS")
-    ax_hist.axvline(x=myhre, linestyle="--", color="black", label= 'Minimum Likely ECS \n(Myhre et al. 2025)')
-    ax_hist.axvline(x = 1.8, color = "grey", linestyle="--", label = "CMIP6 Bounds")
-    ax_hist.axvline(x= 5.6, linestyle="--", color="grey")
-    #ax_hist.legend(fontsize="xx-large", loc='upper right', bbox_to_anchor=(1.29, 0.97))
-    ax_hist.set_title(labels[r])
+    # ax_hist.set_ylabel("")
+    # ax_hist.spines['top'].set_color('white')
+    # ax_hist.spines['left'].set_color('white')
+    # ax_hist.spines['right'].set_color('white')
+    # ax_hist.spines['bottom'].set_color('black')
+    # ax_hist.yaxis.set_ticks([])
+    # ax_hist.axvline(x = np.median(tcrecs[:,1]), color = "black", label = "Median ECS")
+    # ax_hist.axvline(x=myhre, linestyle="--", color="black", label= 'Minimum Likely ECS \n(Myhre et al. 2025)')
+    # ax_hist.axvline(x = 1.8, color = "grey", linestyle="--", label = "CMIP6 Bounds")
+    # ax_hist.axvline(x= 5.6, linestyle="--", color="grey")
+    # #ax_hist.legend(fontsize="xx-large", loc='upper right', bbox_to_anchor=(1.29, 0.97))
+    # ax_hist.set_title(labels[r])
     
     # MAIN Part
     
@@ -128,7 +128,7 @@ for idx,r in enumerate(range(-8, 0)):
     plt.tight_layout()
     
     outpath = fr"C:\Users\LENOVO\Desktop\FAIR-PyCas\TR-ECS-plot\latin\plot-one_{save_titels[idx]}.png"
-    plt.savefig(outpath)
+    #plt.savefig(outpath)
     plt.show()
     plt.close()
     
@@ -222,7 +222,7 @@ with PdfPages(outpdf) as pdf:
         plt.tight_layout()
         
         # in PDF speichern
-        pdf.savefig(fig)
+        #pdf.savefig(fig)
         plt.close(fig)
 
 print(f"Alle Plots wurden in {outpdf} gespeichert.")

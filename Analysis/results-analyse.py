@@ -13,7 +13,7 @@ Get the Numbers named in the Results:
 import numpy as np
 
 # Load Data
-risk = np.load("C:/Users/LENOVO/Desktop/FAIR-PyCas/risk_array_2-4.npy")
+risk = np.load("C:/Users/LENOVO/Desktop/FAIR-PyCas/risks_data.npy")
 scenarios = np.array((309, 344, 382, 424, 523, 646, 798))
 
 # ---- Start Analysis ---------

@@ -29,7 +29,7 @@ networks = ["_0.0_0.0_0.0","_0.0_0.0_1.0","_0.0_0.0_-1.0",
 
 path = "C:/Users/LENOVO/Desktop/FAIR-PyCas"
 
-data_path = os.path.join(path, "risk_array_2-4.npy")
+data_path = os.path.join(path, "risks_data.npy")
 risk = np.load(data_path)
 
 

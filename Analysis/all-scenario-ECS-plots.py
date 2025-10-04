@@ -28,8 +28,7 @@ networks = ["_0.0_0.0_0.0","_0.0_0.0_1.0","_0.0_0.0_-1.0",
             "_1.0_0.0_0.0","_1.0_0.0_1.0","_1.0_0.0_-1.0",
             "_-1.0_0.0_0.0","_-1.0_0.0_1.0","_-1.0_0.0_-1.0"]
 
-path = "C:/Users/LENOVO/Desktop/FAIR-PyCas"
-risk = np.load('risk_array_2-4.npy')
+risk = np.load('C:/Users/LENOVO/Desktop/FAIR-PyCas/risks_data.npy')
 
 titels = ['$\geq$ 1', '$\geq$ 2','$\geq$ 3','all 4', 'GIS', 'AMOC', 'WAIS', 'AMAZ']
 save_titels = ['1','2','3','4','GIS','AMOC','WAIS','AMAZ']
@@ -229,7 +228,7 @@ for idx, r in enumerate(range(-8, 0)):
     plt.legend(fontsize="xx-large", loc="upper right", bbox_to_anchor=(1.23, 0.99))
     plt.title(titels[idx])
     outpath = fr"C:\Users\LENOVO\Desktop\FAIR-PyCas\TR-ECS-plot\latin\plot_{save_titels[idx]}_secondplotv2.png"
-    plt.savefig(outpath, bbox_inches="tight")
+    #plt.savefig(outpath, bbox_inches="tight")
     plt.show()
     plt.close()
         
