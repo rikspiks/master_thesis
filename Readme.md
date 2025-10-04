@@ -3,7 +3,7 @@
 This GitHub Repository contains all code I used for my Master Thesis. All code is written in Python. The complete Methodology is sketched out in the workflow below.
 The Thesis answers the question: _How does Climate Sensitivity determine Climate Tipping Risk?_
 
-All data can be found in the [Zenodo Project](https://zenodo.org/records/17256491?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjcwMjAxMmU5LTk1Y2EtNGFhYy1hMDRjLTQyYWM1ZDI4YTJmNSIsImRhdGEiOnt9LCJyYW5kb20iOiI2ZDQ3ZDc5YzI0NzBmM2MwMTgzODNiNmEzYTRmMjAxOSJ9.A6ZO8jsTwhK2j3jas2Oq-7lYOvRo79YgIRWGS0-yJt_jYNIIIRfZmcfrYF32QFhFvfFsAFW5H-W9Oe_aQbvHPA).
+All data can be found in the [Zenodo Project](https://doi.org/10.5281/zenodo.17250454).
 
 ## Structure: 
 
@@ -13,7 +13,7 @@ All data can be found in the [Zenodo Project](https://zenodo.org/records/1725649
 
 `method_plots.py` – Generates methodology plots for FaIR section.
 
-Outputs: temperature time series + ECS ensemble [Zenodo](https://zenodo.org/records/17256491?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjcwMjAxMmU5LTk1Y2EtNGFhYy1hMDRjLTQyYWM1ZDI4YTJmNSIsImRhdGEiOnt9LCJyYW5kb20iOiI2ZDQ3ZDc5YzI0NzBmM2MwMTgzODNiNmEzYTRmMjAxOSJ9.A6ZO8jsTwhK2j3jas2Oq-7lYOvRo79YgIRWGS0-yJt_jYNIIIRfZmcfrYF32QFhFvfFsAFW5H-W9Oe_aQbvHPA)
+Outputs: temperature time series + ECS ensemble [Zenodo](https://doi.org/10.5281/zenodo.17250454)
 
 **2. Latin Hypercube Sampling:**
 
@@ -46,7 +46,7 @@ Running Pycascades requires:
 
 `convert-from-output-to-risk.py` - Calculates the tipping risk from the output `pycas_output.npy` and saves it in `risks_data.npy`
 
-Results: `pycas_output.npy` and `risks_data.npy` are stored in [Zenodo](https://zenodo.org/records/17256491?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjcwMjAxMmU5LTk1Y2EtNGFhYy1hMDRjLTQyYWM1ZDI4YTJmNSIsImRhdGEiOnt9LCJyYW5kb20iOiI2ZDQ3ZDc5YzI0NzBmM2MwMTgzODNiNmEzYTRmMjAxOSJ9.A6ZO8jsTwhK2j3jas2Oq-7lYOvRo79YgIRWGS0-yJt_jYNIIIRfZmcfrYF32QFhFvfFsAFW5H-W9Oe_aQbvHPA)
+Results: `pycas_output.npy` and `risks_data.npy` are stored in [Zenodo](https://doi.org/10.5281/zenodo.17250454)
 
 `all-scenario-ECS-plots.py` 
 
