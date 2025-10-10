@@ -49,14 +49,15 @@ fig, (ax_hist, ax) = plt.subplots(2, 1, sharex=True, figsize=(15, 13),
 
 # Histogramm 
 for i in range(len(bins) - 1):
-    alpha = (counts[i] / max_count) * 0.8
+    #alpha = (counts[i] / max_count) * 0.8
     ax_hist.bar(
         (bins[i] + bins[i + 1]) / 2,
         counts[i],
         width=(bins[i + 1] - bins[i]),
         color='darkorange',
-        alpha=alpha,
-        align='center'
+        alpha=1,
+        align='center',
+        edgecolor = "white"
     )
 
 ax_hist.set_ylabel("")
