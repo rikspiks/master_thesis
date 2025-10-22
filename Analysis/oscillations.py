@@ -17,7 +17,7 @@ for n in range(7):
     print(np.unique(amoc_oscillations[:,n]))
 
 '''
-At total of 13 959 cases, = ? 0.2 % of all model runs. (3 855 within 0.5-1°C scenario)
+At total of 13 959 cases, = 4.5 % of all model runs. 
 They were constricted to (i) negative coupling between AMOC and WAIS, and
     (ii) high coupling strengths of 0.7 to 1. 
     Nonetheless, oscillations occurred in each scenario and with 
