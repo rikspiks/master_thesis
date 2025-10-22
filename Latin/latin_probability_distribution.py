@@ -107,10 +107,10 @@ wais = array_limits.T[2]
 amaz = array_limits.T[3]
 nino = array_limits.T[4]
 
-plt.hist(gis, 24, facecolor='c', alpha=0.8, label="GIS")
+plt.hist(gis, 25, facecolor='c', alpha=0.8, label="GIS")
 plt.hist(thc, 25, facecolor='b', alpha=0.8, label="AMOC")
-plt.hist(wais, 47, facecolor='k', alpha=0.8, label="WAIS")
-plt.hist(amaz, 10, facecolor='g', alpha=0.8, label="AMAZ")
+plt.hist(wais, 25, facecolor='k', alpha=0.8, label="WAIS")
+plt.hist(amaz, 25, facecolor='g', alpha=0.8, label="AMAZ")
 legend = plt.legend(loc='best', fontsize="xx-large", frameon=True)
 legend.get_frame().set_facecolor('white')
 legend.get_frame().set_edgecolor('white')   # optional
@@ -131,10 +131,10 @@ rand_tau_wais = array_limits.T[7]
 rand_tau_nino = array_limits.T[8]
 rand_tau_amaz = array_limits.T[9]
 
-plt.hist(rand_tau_gis,  140, facecolor='c', alpha=0.8, label="GIS")
-plt.hist(rand_tau_thc,  16, facecolor='b', ec='b', alpha=0.8, label="AMOC")
-plt.hist(rand_tau_wais, 120, facecolor='k', alpha=0.8, label="WAIS")
-plt.hist(rand_tau_amaz, 14, color='g',ec='g', alpha=0.8, label="AMAZ")
+plt.hist(rand_tau_gis,  100, facecolor='c', alpha=0.8, label="GIS")
+plt.hist(rand_tau_thc,  100, facecolor='b', ec='b', alpha=0.8, label="AMOC")
+plt.hist(rand_tau_wais, 100, facecolor='k', alpha=0.8, label="WAIS")
+plt.hist(rand_tau_amaz, 100, color='g',ec='g', alpha=0.8, label="AMAZ")
 legend = plt.legend(loc='best', fontsize="xx-large", frameon=True)
 legend.get_frame().set_facecolor('white')
 legend.get_frame().set_edgecolor('white')   # optional
