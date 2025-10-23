@@ -108,7 +108,7 @@ def left_inverse_min_preimage(x, y, *, sort_x=True, fill_value=np.nan):
 # ---- Burning Amber -----------------------------
 risk = np.load("C:/Users/LENOVO/Desktop/FAIR-PyCas/risk_array_2-4.npy")
 
-colors = ['green', 'orange', 'r']
+colors = ['gold', 'darkorange', 'black']
 labels = ['10 % Tipping Risk', '50 % Tipping Risk', '90 % Tipping Risk']
 
 # get percentage data
